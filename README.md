@@ -54,7 +54,7 @@ bundle exec rake -T
 # rake bi:clean    # Remove compiled css
 # rake bi:compile  # Compile css
 # rake bi:init     # Initialize base structure
-# rake bi:watch    # Run compass watch
+# rake bi:watch    # Run sass watch
 ```
 
 ## Versioning

@@ -43,6 +43,10 @@ module BourbonIntegrator
       @config.fetch("project_assets_verbose") ? "nested" : "compressed"
     end
 
+    def sourcemap
+      "--sourcemap=none" unless @config.fetch("project_assets_verbose")
+    end
+
     def stylesheets_path
       File.join(
         @config.fetch("project_ui_dir"),

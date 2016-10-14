@@ -19,7 +19,7 @@ class WatchTest < Minitest::Test
   def test_run_comman_call_system
     BourbonIntegrator::Command::Watch.new(@command_args).run
     assert_match(
-      %r{^sass --scss --style compressed --watch .*/sass:./public/stylesheets},
+      %r{^sass --scss --style compressed --sourcemap=none --watch .*/sass:./public/stylesheets},
       @executor.exec_calls.first
     )
   end
@@ -28,7 +28,7 @@ class WatchTest < Minitest::Test
     config = BourbonIntegrator::Config.new project_assets_verbose: true
     BourbonIntegrator::Command::Watch.new(@command_args.merge(config: config)).run
     assert_match(
-      %r{^sass --scss --style nested --watch .*\./sass:./public/stylesheets},
+      %r{^sass --scss --style nested\s+--watch .*\./sass:./public/stylesheets},
       @executor.exec_calls.first
     )
   end

@@ -24,7 +24,9 @@ module BourbonIntegrator
     class Watch < CommandTemplate
       def run
         @output.puts "*** Watching for changes ***"
-        @executor.exec "sass --scss --style #{sass_style} --watch #{sass_path}:#{stylesheets_path}"
+        @executor.exec(
+          "sass --scss --style #{sass_style} #{sourcemap} --watch #{sass_path}:#{stylesheets_path}"
+        )
       end
     end
   end

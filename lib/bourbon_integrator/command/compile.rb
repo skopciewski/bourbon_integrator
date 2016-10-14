@@ -25,7 +25,7 @@ module BourbonIntegrator
       def run
         @output.puts "*** Compile CSS ***"
         @executor.system(
-          "sass --scss --style #{sass_style} --update #{sass_path}:#{stylesheets_path}"
+          "sass --scss --style #{sass_style} #{sourcemap} --update #{sass_path}:#{stylesheets_path}"
         )
       end
     end

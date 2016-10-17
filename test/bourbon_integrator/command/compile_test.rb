@@ -19,7 +19,7 @@ class CompileTest < Minitest::Test
   def test_run_comman_call_system
     BourbonIntegrator::Command::Compile.new(@command_args).run
     assert_match(
-      %r{^sass --scss --style compressed --sourcemap=none --update .*/sass:./public/stylesheets},
+      %r{^sass -r sass-globbing --scss --style compressed --sourcemap=none --update .*/sass:./public/stylesheets},
       @executor.system_calls.first
     )
   end
@@ -28,7 +28,7 @@ class CompileTest < Minitest::Test
     config = BourbonIntegrator::Config.new project_assets_verbose: true
     BourbonIntegrator::Command::Compile.new(@command_args.merge(config: config)).run
     assert_match(
-      %r{^sass --scss --style nested\s+--update .*\./sass:./public/stylesheets},
+      %r{^sass -r sass-globbing --scss --style nested\s+--update .*\./sass:./public/stylesheets},
       @executor.system_calls.first
     )
   end

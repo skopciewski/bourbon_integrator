@@ -1,3 +1,7 @@
+=== 1.0.3 (2016.10.17)
+
+* use sass-globbing when call sass
+
 === 1.0.2 (2016.10.14)
 
 * disable sourcemap when assets verbose is disabled

@@ -1,6 +1,7 @@
 # encoding: utf-8
+# frozen_string_literal: true
 
-# Copyright (C) 2016 Szymon Kopciewski
+# Copyright (C) 2017 Szymon Kopciewski
 #
 # This file is part of BourbonIntegrator.
 #
@@ -18,5 +19,5 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 module BourbonIntegrator
-  VERSION = "1.0.4".freeze
+  VERSION = "1.0.5"
 end

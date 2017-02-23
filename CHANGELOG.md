@@ -1,3 +1,7 @@
+=== 1.0.5 (2017.02.23)
+
+* fix travis and some refactoring
+
 === 1.0.4 (2017.02.23)
 
 * update neat to v2.0

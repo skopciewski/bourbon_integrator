@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class FakeExecutor
   attr_reader :exec_calls, :system_calls
 

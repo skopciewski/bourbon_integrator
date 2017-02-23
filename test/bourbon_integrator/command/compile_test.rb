@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require "test_helper"
 require "bourbon_integrator/command/compile"
 require "bourbon_integrator/config"

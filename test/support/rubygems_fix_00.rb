@@ -2,7 +2,7 @@
 # fix bug with Gem.datadir
 # see: https://github.com/rubygems/rubygems/issues/1673
 
-if Gem.rubygems_version.to_s == "2.5.1"
+if Gem.rubygems_version.to_s =~ /2\.5\.\d+/
   module Gem
     class BasicSpecification
       undef :datadir if method_defined?(:datadir)

@@ -2,6 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/bourbon_integrator.svg)](http://badge.fury.io/rb/bourbon_integrator)
 [![Code Climate](https://codeclimate.com/github/skopciewski/bourbon_integrator/badges/gpa.svg)](https://codeclimate.com/github/skopciewski/bourbon_integrator)
+[![Dependency Status](https://gemnasium.com/badges/github.com/skopciewski/bourbon_integrator.svg)](https://gemnasium.com/github.com/skopciewski/bourbon_integrator)
 
 ## Assumptions
 

@@ -1,4 +1,3 @@
-# coding: utf-8
 # frozen_string_literal: true
 
 begin
@@ -23,11 +22,11 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
 
   spec.add_runtime_dependency "piko_model", "~>1"
-  spec.add_runtime_dependency "bourbon", "~>4"
-  spec.add_runtime_dependency "neat"
-  spec.add_runtime_dependency "bitters"
+  spec.add_runtime_dependency "bourbon", "~>4", ">=4.3"
+  spec.add_runtime_dependency "bitters", "~>1", ">=1.2"
+  spec.add_runtime_dependency "neat", "~>2"
   spec.add_runtime_dependency "sass-globbing", "1.1.5"
-  spec.add_runtime_dependency "mustache"
+  spec.add_runtime_dependency "mustache", "~>1.0"
 
   spec.add_development_dependency "rake"
   spec.add_development_dependency "pry"
